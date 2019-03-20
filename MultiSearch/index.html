@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>MultiSearch</title>
 	<link rel="stylesheet" href="assets/index.css">
+	<link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
 
 </head>
 
@@ -12,17 +13,40 @@
 
 	<div class="searchbar">
 		<input type="text" placeholder="Search everything.">
-		<button type="button">Search</button>
-		<button type="button">I'm Feeling Very Lucky</button>
+		<button type="button">Just Search</button>
+		<button type="button">Detailed Search</button>
 	</div>
 	<nav class="menu-navigation-basic">
 		<a href="#" class="selected">HOME</a>
 		<a href="#">IMAGES</a>
 		<a href="#">VIDEOS</a>
+		<a href="#">NEWS</a>
 		<a href="#">MAPS</a>
 		<a href="#">PRODUCTS</a>
-		<a href="#">SERVICES</a>
 		<a href="#">ABOUT</a>
 	</nav>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<script src="assets/slicknav/jquery.slicknav.min.js"></script>
+
+	<script>
+
+		$(function(){
+
+	        var menu = $('.menu-navigation-basic');
+
+	        menu.slicknav();
+
+	        // Mark the clicked item as selected
+
+	        menu.on('click', 'a', function(){
+	            var a = $(this);
+
+	            a.siblings().removeClass('selected');
+	            a.addClass('selected');
+	        });
+	    });
+	    
+	</script>
 </body>
 </html>

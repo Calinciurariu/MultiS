@@ -11,13 +11,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 	padding: 0;
-    margin: 0;
-    vertical-align: bottom;
-    margin-top: 20px;
-	position:absolute;
-    bottom:0;
-	text-align: center;
 
+    vertical-align: bottom;
+    margin-top: -15 px;
+	position:absolute;
+    margin-bottom:20px;
+	text-align: center;
+    margin-left: 10% ;
 }
 
 .logo{
@@ -40,13 +40,14 @@ body{
 
 .menu-navigation-basic a {
     color:  #809098;
-	letter-spacing: 15px;
+	letter-spacing:  -1 px;
 	display: inline-block;
     list-style-type: none;
     font-size: 44px;
     font-weight: bold;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin: 0 20px auto;
+
+	
     line-height: 2;
     text-transform: uppercase;
     text-decoration: none;
@@ -56,6 +57,63 @@ body{
 
 .menu-navigation-basic a.selected {
     color:  #435762;
-    border-bottom: 2px solid #4db3e3;
-    padding-bottom: 6px;
+  /* border-bottom: 2px solid #4db3e3; */
+   /* padding-bottom: 6px; */
+}
+* {
+  box-sizing: border-box;
+}
+div.searchbar 
+{
+	margin-bottom: -15px;
+	 padding-left: 10%;
+	 	 padding-right: 10%;
+}
+/* Style the search field */
+div.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+div.searchbar button {
+  float: left;
+  width: 10%;
+  
+  padding: 10px;
+  background: #4db3e3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+div.searchbar button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+div.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.slicknav_menu {
+    display:none;
+}
+
+@media (max-width: 600px) {
+    .menu-navigation-basic{
+        display:none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
 }

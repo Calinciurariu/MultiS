@@ -21,7 +21,7 @@ body{
 }
 
 .logo{
-	  display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,8 +46,6 @@ body{
     font-size: 44px;
     font-weight: bold;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-
-	
     line-height: 2;
     text-transform: uppercase;
     text-decoration: none;
@@ -57,8 +55,8 @@ body{
 
 .menu-navigation-basic a.selected {
     color:  #435762;
-  /* border-bottom: 2px solid #4db3e3; */
-   /* padding-bottom: 6px; */
+  /*border-bottom: 2px solid #4db3e3; */
+  /*padding-bottom: 6px; */
 }
 * {
   box-sizing: border-box;
@@ -66,8 +64,8 @@ body{
 div.searchbar 
 {
 	margin-bottom: -15px;
-	 padding-left: 10%;
-	 	 padding-right: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 /* Style the search field */
 div.searchbar input[type=text] {
@@ -83,7 +81,6 @@ div.searchbar input[type=text] {
 div.searchbar button {
   float: left;
   width: 10%;
-  
   padding: 10px;
   background: #4db3e3;
   color: white;
